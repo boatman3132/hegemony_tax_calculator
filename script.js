@@ -1,5 +1,5 @@
 const currentSelections = {
-    labor: null,
+    labor: null, 
     tax: null,
     medical: null,
     education: null,
