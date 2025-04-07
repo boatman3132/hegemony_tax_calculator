@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>稅額查詢系統</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>稅額查詢系統</h1>
+
+  <div class="policy-section">
+
+    <!-- 政策選擇區 -->
+    <div class="toggle-group labor-policy">
+      <div class="toggle-label">勞動政策：</div>
+      <div class="toggle-buttons" id="labor-toggle">
+        <button data-value="a">A</button>
+        <button data-value="b">B</button>
+        <button data-value="c">C</button>
+      </div>
+    </div>
+
+    <div class="toggle-group tax-policy">
+      <div class="toggle-label">稅賦政策：</div>
+      <div class="toggle-buttons" id="tax-toggle">
+        <button data-value="a">A</button>
+        <button data-value="b">B</button>
+        <button data-value="c">C</button>
+      </div>
+    </div>
+
+    <div class="toggle-group medical-policy">
+      <div class="toggle-label">醫療政策：</div>
+      <div class="toggle-buttons" id="medical-toggle">
+        <button data-value="a">A</button>
+        <button data-value="b">B</button>
+        <button data-value="c">C</button>
+      </div>
+    </div>
+
+    <div class="toggle-group education-policy">
+      <div class="toggle-label">教育政策：</div>
+      <div class="toggle-buttons" id="education-toggle">
+        <button data-value="a">A</button>
+        <button data-value="b">B</button>
+        <button data-value="c">C</button>
+      </div>
+    </div>
+
+    <!-- 人口與資本利得 -->
+    <div class="toggle-group labor-pop">
+      <div class="toggle-label">勞動人口數：</div>
+      <div class="toggle-buttons" id="labor-population-toggle">
+        <button data-value="3">3</button>
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="10">10</button>
+      </div>
+    </div>
+
+    <div class="toggle-group middle-pop">
+      <div class="toggle-label">中產在資本、公營單位上班的公司數：</div>
+      <div class="toggle-buttons" id="middle-population-toggle">
+        <button data-value="0">0</button>
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="10">10</button>
+        <button data-value="11">11</button>
+        <button data-value="12">12</button>
+        <button data-value="13">13</button>
+        <button data-value="14">14</button>
+      </div>
+    </div>
+
+    <div class="toggle-group middle-company">
+        <div class="toggle-label">中產營運公司數：</div>
+        <div class="toggle-buttons" id="middle-company-toggle">
+          <button data-value="0">0</button>
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+        </div>
+      </div>
+
+    <div class="toggle-group capital-gain">
+      <div class="toggle-label">資本利得：</div>
+      <div class="toggle-buttons" id="capital-gain-toggle">
+        <button data-value="5-9">5-9</button>
+        <button data-value="10-24">10-24</button>
+        <button data-value="25-49">25-49</button>
+        <button data-value="50-99">50-99</button>
+        <button data-value="100-199">100-199</button>
+        <button data-value="200-299">200-299</button>
+        <button data-value="300+">300+</button>
+      </div>
+    </div>
+
+  <div class="toggle-group capital-company">
+    <div class="toggle-label">資本營運公司數：</div>
+    <div class="toggle-buttons" id="capital-company-toggle">
+      <button data-value="0">0</button>
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="10">10</button>
+      <button data-value="11">11</button>
+      <button data-value="12">12</button>
+    </div>
+  </div>
+
+
+  <!-- 稅額顯示區 -->
+  <div class="result-container">
+    <div class="result-box labor-tax">
+      <div class="result-title">勞工稅額</div>
+      <div class="result-value" id="laborResult">$0</div>
+    </div>
+    <div class="result-box middle-tax">
+      <div class="result-title">中產稅額</div>
+      <div class="result-value" id="middleResult">$0</div>
+    </div>
+    <div class="result-box capital-tax">
+      <div class="result-title">資本稅額</div>
+      <div class="result-value" id="capitalResult">$0</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
