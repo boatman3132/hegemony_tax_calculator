@@ -143,3 +143,31 @@ body {
     font-weight: bold;
   }
   
+  /* 手機版調整 */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  .toggle-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggle-label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .toggle-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+  .result-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .result-box {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+}
